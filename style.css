@@ -1,0 +1,141 @@
+@font-face {
+	font-family: Montserrat;
+	src: url('Montserrat-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: Montserrat;
+	src: url('Montserrat-SemiBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: IBMPlex;
+	src: url('IBMPlexSans-Text.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: IBMPlex;
+	src: url('IBMPlexSans-Bold.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: IBMPlex;
+	src: url('IBMPlexSans-Italic.otf') format('opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+:root { 
+	--container: #eaeaf0;
+	--main: #f8f8f8;
+	--dark: #222222;
+	--color: #146899;
+	--color2: #2020bb;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+#container-outer {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+
+	background-color: var(--container);
+}
+#container-inner {
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 16px;
+	padding: 16px;
+	width: 896px;
+	min-height: 704px;
+	
+	position: relative;
+	background-color: var(--main);
+	
+	border-image: linear-gradient(var(--main), var(--container)) 50;
+	border-width: 16px;
+	border-style: solid;
+	border-top: 0;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+a {text-decoration: none; color: black;}
+a:hover {color: var(--color);}
+.bf {font-weight: bold;}
+#h-line {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	margin-left: 256px;
+	margin-right: 256px;
+	
+	border-image: radial-gradient(var(--dark), var(--main)) 1;
+	border-width: 1px;
+	border-style: solid;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+#nav {
+	display: block;
+	text-align: center;
+	font-family: Montserrat;
+}
+#nav a {
+	margin: 4px;
+	padding: 4px;
+	font-size: 14px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+#me {
+	display: block;
+	float: right;
+	margin-top: 6px;
+	margin-left: 64px;
+	margin-right: 0px;
+	width: 160px;
+	border-radius: 4px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+#main {
+	margin-left: 64px;
+	margin-right: 64px;
+	
+	font-family: IBMPlex;
+}
+#main h1 {
+	margin: 16px;
+	
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	font-size: 28px;
+}
+#main h3 {
+	margin: 16px;
+	margin-left: 0;
+	margin-right: 0;
+	
+	font-weight: bold;
+	color: black;
+	font-size: 20px;
+}
+#main p {
+	margin: 16px;
+	margin-left: 0;
+	margin-right: 0;
+	
+	text-align: left;
+	text-justify: inter-word;
+	color: black;
+	font-size: 16px;
+}
+#main a {text-decoration: none; color: var(--color2);}
+#main a:hover {color: var(--color);}
+/* ------------------------------------------------------------------------------------------------------------------------ */
